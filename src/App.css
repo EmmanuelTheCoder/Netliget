@@ -3,7 +3,7 @@
   padding: 0;
 }
 .app{
-  background: rgba(252, 250, 249, 0.4);
+  background: rgba(230, 226, 224, 0.4);
   height: 100vh;
 }
 header{
@@ -11,7 +11,7 @@ header{
   height: 16rem;
   color: white;
   border-radius: 10px 5px 50px 0;
-  box-shadow: 8px 4px 4px 8px rgb(194, 187, 184);
+  box-shadow: 3px 4px 4px 8px rgb(194, 187, 184);
   overflow: hidden;
 }
 header h1{

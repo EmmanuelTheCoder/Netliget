@@ -20,18 +20,23 @@ const App = () =>{
   const handleValidity = () =>{
     if(Mtn.includes(inputVal.slice(0, 4)) || Mtn.includes(inputVal.slice(0,5))){
       alert("this is an mtn number");
+      setResult(`MTN. ${inputVal} is an MTN number`)
     }
     if(Etisalat.includes(inputVal.slice(0, 4))){
       alert("this is an Etisalat number");
+      setResult(`9mobile. ${inputVal} is an 9mobile number`)
     }
     if(Glo.includes(inputVal.slice(0, 4))){
       alert("this is a Glo number");
+      setResult(`Glo. ${inputVal} belongs to the Glo network`)
     }
     if(Airtel.includes(inputVal.slice(0, 4))){
       alert("this is an Airtel number");
+      setResult(`Airtel. ${inputVal} belongs to the Airtel network`)
     }
     if(Starcomms.includes(inputVal.slice(0,4)) || Starcomms.includes(inputVal.slice(0, 5))){
-      alert("this is a starcomms number")
+      alert("this is a starcomms number");
+      setResult(`Starcommms. ${inputVal} belongs to the Starcomms network`)
     }
     
 
