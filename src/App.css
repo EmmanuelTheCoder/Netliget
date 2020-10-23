@@ -1,0 +1,67 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.app{
+  background: rgba(252, 250, 249, 0.4);
+  height: 100vh;
+}
+header{
+  background: rgba(255,0,0,.5);
+  height: 16rem;
+  color: white;
+  border-radius: 10px 5px 50px 0;
+  box-shadow: 8px 4px 4px 8px rgb(194, 187, 184);
+  overflow: hidden;
+}
+header h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  padding-top: 1rem;
+}
+ header .i{
+  text-transform: lowercase;
+  margin-top: 5rem;
+}
+header .get{
+  font-style: italic;
+}
+.info{
+  text-align: center;
+  color: black;
+  padding: 3rem;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px;
+}
+.explain{
+  font-style: italic;
+  margin-left: -.3rem;
+  margin-bottom: .4rem;
+}
+.search{
+  margin-top: 3rem;
+  text-align: center;
+}
+.search input{
+  width: 14rem;
+  height: 2rem;
+  border-radius: 50px;
+  outline: none;
+  font-size: 1.1rem;
+  /* margin-right: .4rem; */
+}
+.search input:focus{
+  border: 2px solid rgb(94, 122, 94);
+}
+.search button{
+  width: 6rem;
+  height: 1.5rem;
+  border-radius: 10px 20px;
+  margin-left: .3rem;
+  outline: none;
+  background: rgb(221, 48, 48);
+  color: white;
+  font-size: 1.1rem;
+  border: 1px solid green;
+}
