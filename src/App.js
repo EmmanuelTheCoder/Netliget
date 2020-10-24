@@ -78,9 +78,9 @@ const App = () =>{
       <div className="result-container" style={display}>
       <p className="result">{result}</p>
       </div>
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <p className="footer">loyaltysamuel001@gmail.com</p>
-      </div>
+      </div> */}
     </div>
   );
 }
