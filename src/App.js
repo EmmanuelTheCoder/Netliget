@@ -5,7 +5,7 @@ const App = () =>{
 
   const showResult = {
     display: 'block',
-    marginLeft: '-3rem',
+     marginLeft: '-.5rem',
     animation: '2s forward infinite',
     transition: 'all 3s ease',
     
