@@ -1,10 +1,24 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 const App = () =>{
   const[inputVal, setInputVal] = useState("");
-  const [result, setResult] = useState("")
+  const [result, setResult] = useState("");
+  const [display, setDisplay] = useState()
 
+  const hideResult = {
+    display: 'none'
+  }
+  const showResult = {
+    display: 'block',
+    transition: '3s all ease-in'
+  }
+  useEffect(()=>{
+    setDisplay(hideResult);
+    setInputVal();
+  },[hideResult]);
+  
+  
   const handleInputChange = (e) =>{
     setInputVal(e.target.value);
     console.log(inputVal)
@@ -18,9 +32,11 @@ const App = () =>{
 
   console.log(Emmanuel.map((emma,index)=> emma[index]))
   const handleValidity = () =>{
+    // show the result by updating the state
+    // setDisplay(showResult);
     if(Mtn.includes(inputVal.slice(0, 4)) || Mtn.includes(inputVal.slice(0,5))){
       alert("this is an mtn number");
-      setResult(`MTN. ${inputVal} is an MTN number`)
+      setResult(`${inputVal} is an MTN number`)
     }
     if(Etisalat.includes(inputVal.slice(0, 4))){
       alert("this is an Etisalat number");
@@ -38,6 +54,14 @@ const App = () =>{
       alert("this is a starcomms number");
       setResult(`Starcommms. ${inputVal} belongs to the Starcomms network`)
     }
+    if(typeof inputVal === 'string'){
+      setResult(`Please input a phone number and not a text`)
+    }
+    else{
+      setResult(`
+      ${inputVal} does not belong to Nigeria or you have inputed a wrong number`)
+    }
+    // setInputVal('');
     
 
   }
@@ -55,7 +79,9 @@ const App = () =>{
         <input type="text" value={inputVal} onChange={handleInputChange}/>
         <button type="button" onClick={handleValidity}>Check</button>
       </div>
+      <div className="result-container" style={display}>
       <p className="result">{result}</p>
+      </div>
     </div>
   );
 }
