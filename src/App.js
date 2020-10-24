@@ -5,7 +5,7 @@ const App = () =>{
 
   const showResult = {
     display: 'block',
-    marginLeft: '-4rem',
+    marginLeft: '-3rem',
     animation: '2s forward infinite',
     transition: 'all 3s ease',
     
@@ -78,7 +78,9 @@ const App = () =>{
       <div className="result-container" style={display}>
       <p className="result">{result}</p>
       </div>
-      <p className="footer" style={{textAlign:'center', marginTop: '13rem', fontSize: '1.2rem', fontFamily:'Georgia'}}>loyaltysamuel001@gmail.com</p>
+      <div className="footer-container">
+        <p className="footer">loyaltysamuel001@gmail.com</p>
+      </div>
     </div>
   );
 }

@@ -2,6 +2,9 @@
   margin:0;
   padding: 0;
 }
+body{
+  max-height: 100vh;
+}
 .app{
   background: rgba(230, 226, 224, 0.4);
   height: 100vh;
@@ -33,7 +36,9 @@ header .get{
   padding: 3rem;
   font-size: 1.3rem;
   text-shadow: 1px 1px;
+  transition: all 2s ease;
 }
+
 .explain{
   font-style: italic;
   margin-left: -.3rem;
@@ -86,4 +91,17 @@ header .get{
     margin-left: -25rem;
     transition: all 3s ease;
     display: none;
+    margin-bottom: 4.5rem;
+}
+.footer{
+  font-size: 1.2rem;
+  font-family: Georgia;
+  text-align: center;
+}
+.footer-container{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%
+  
 }
