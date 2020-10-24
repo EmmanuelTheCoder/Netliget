@@ -42,6 +42,7 @@ header .get{
 .search{
   margin-top: 3rem;
   text-align: center;
+  position: relative;
 }
 .search input{
   width: 14rem;
@@ -49,6 +50,7 @@ header .get{
   border-radius: 50px;
   outline: none;
   font-size: 1.1rem;
+  padding-left: .2rem;
   /* margin-right: .4rem; */
 }
 .search input:focus{
@@ -78,15 +80,10 @@ header .get{
   font-family: sans-serif;
   padding: 1rem 2rem;
   border-radius: 6px 0 10px 20px;
+  word-wrap: break-word;
 }
 .result-container{
-    margin-left: -4rem;
-    transition: all 2s ease-in-out;
-    animation: slide 2s forwards infinite;
-    
+    margin-left: -25rem;
+    transition: all 3s ease;
+    display: none;
 }
-/* @keyframes slide{
-  0%{
-    position: absolute;
-  }
-} */
